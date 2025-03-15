@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .card {
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        .profile-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 5px solid #eee;
+        }
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .card-body p {
+            font-size: 16px;
+            font-family: Times New Roman;
+            text-align: justify;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card-body .designation {
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #555;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+                margin: 0 10px;
+            }
+
+            .card-body h2 {
+                font-size: 22px;
+            }
+
+            .card-body p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="C:\Users\HP\Downloads\MY.jpeg" alt="Profile Picture" class="profile-img">
+        <div class="card-body">
+            <h2>Ananya Pathak</h2>
+            <p class="designation">Software Developer</p>
+            <p>Motivated Software Developer trainee seeking a challenging opportunity to utilize my skills in Django Framework, Python and Javascript to develop innovative solutions; passionate about staying ahead of emerging technologies.</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ananya-pathak-688868279" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/ananya5019" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </div>
+    <!-- FontAwesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
